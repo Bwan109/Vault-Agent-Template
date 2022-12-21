@@ -1,0 +1,3 @@
+{{ with secret "secret/data/db" }}
+docker_pass: {{ .Data.data.docker_pass }}
+{{ end }}
