@@ -1,3 +1,6 @@
-{{ with secret "secret/data/db" }}
-docker_pass: {{ .Data.data.docker_pass }}
+{{ with secret "kv/secret/data/db" }}
+db_user: {{ .Data.data.yuga_user }}
+db_pass: {{ .Data.data.yuga_pass }}
+
+
 {{ end }}
