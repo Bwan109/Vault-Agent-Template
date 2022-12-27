@@ -16,4 +16,4 @@ jobs:
     
     - name: Update HCL file
       run: |
-        sshpass -p ${{ secrets.UBUNTU_PASSWORD }} scp -r ./vault-agent.hcl Administrator@192.168.100.160:/C:/vault-agent
+        sshpass -p ${{ secrets.UBUNTU_PASSWORD }} scp ./vault-agent.hcl Administrator@192.168.100.160:/C:/vault-agent
