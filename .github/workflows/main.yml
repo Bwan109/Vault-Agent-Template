@@ -3,7 +3,7 @@ name: Vault-Agent HCL to Windows Server
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
     types: [opened, synchronize, reopened]
 
