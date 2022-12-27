@@ -1,0 +1,19 @@
+name: Vault-Agent HCL to Windows Server
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Update HCL file
+      run: |
+        sshpass -p ${{ secrets.UBUNTU_PASSWORD }} scp -r ./vault-agent.hcl Administrator@192.168.100.160:/C:/vault-agent
