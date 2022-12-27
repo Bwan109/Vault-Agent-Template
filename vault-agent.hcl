@@ -38,7 +38,7 @@ template {
 
 
 template {
-   source      = "C:/vault-agent/keys.tmpl"
+   source      = "C:/vault-agent/keys2.tmpl"
    destination = "C:/vault-agent/keys2.txt"
 }
 
