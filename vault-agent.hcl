@@ -43,6 +43,10 @@ template {
 }
 
 
+template {
+   source      = "C:/vault-agent/keys2.tmpl"
+   destination = "C:/vault-agent/keys3.txt"
+}
 
 
 
