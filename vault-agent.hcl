@@ -41,7 +41,7 @@ template {
 
 template {
    source      = "C:/Users/Administrator/Desktop/github-actions-deployment-to-iis/keys.tmpl"
-   destination = "C:/Users/Administrator/Desktop/github-actions-deployment-to-iis/keys2.txt"
+   destination = "C:/Users/Administrator/Desktop/github-actions-deployment-to-iis/keys3.txt"
 
 }
 
