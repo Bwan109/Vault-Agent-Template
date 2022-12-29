@@ -21,6 +21,18 @@ jobs:
     - name: Update HCL file
       run: |
         sshpass -p ${{ secrets.WINDOWS_PASSWORD }} scp ./vault-agent.hcl Administrator@192.168.100.160:/C:/vault-agent
-        sshpass -p ${{ secrets.WINDOWS_PASSWORD }} ssh Administrator@192.168.100.160 'net stop VaultAgent'
-        sshpass -p ${{ secrets.WINDOWS_PASSWORD }} ssh Administrator@192.168.100.160 'net start VaultAgent'
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  # sshpass -p ${{ secrets.WINDOWS_PASSWORD }} ssh Administrator@192.168.100.160 'net stop VaultAgent'
+   #     sshpass -p ${{ secrets.WINDOWS_PASSWORD }} ssh Administrator@192.168.100.160 'net start VaultAgent'
 
