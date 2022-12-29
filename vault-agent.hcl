@@ -32,7 +32,7 @@ listener "tcp" {
 }
 
 template {
-   source      = "C:/Users/Administrator/Desktop/github-actions-deployment-to-iis/keys1.tmpl"
+   source      = "C:/Users/Administrator/Desktop/github-actions-deployment-to-iis/keys.tmpl"
    destination = "C:/Users/Administrator/Desktop/github-actions-deployment-to-iis/keys.txt"
    error_on_missing_key = true
 
@@ -40,7 +40,12 @@ template {
 
 
 
+template {
+   source      = "C:/Users/Administrator/Desktop/github-actions-deployment-to-iis/keys2.tmpl"
+   destination = "C:/Users/Administrator/Desktop/github-actions-deployment-to-iis/keys.txt"
+   error_on_missing_key = true
 
+}
 
 
 
